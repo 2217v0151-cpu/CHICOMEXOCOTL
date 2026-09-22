@@ -1,0 +1,638 @@
+/* ESTILOS GENERALES */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* MENÚ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 2px solid #2e7d32;
+    position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2e7d32;
+}
+
+/* INICIO */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.subtitulo {
+    color: #555;
+    font-size: 16px;
+}
+
+.hero h1 {
+    color: #2e7d32;
+    font-size: 42px;
+    margin: 20px 0 15px;
+}
+
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #2e7d32;
+    margin: 15px auto 0;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton {
+    background-color: #2e7d32;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #1b5e20;
+}
+
+.boton-secundario {
+    background-color: white;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+/* PRODUCTOS */
+
+.productos {
+    padding: 70px 50px;
+    background-color: #f7faf7;
+    text-align: center;
+}
+
+.productos h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.productos-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.productos-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+.producto h3 {
+    color: #2e7d32;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.producto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.producto span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* COMERCIALIZACIÓN */
+
+.comercializacion {
+    padding: 70px 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.comercializacion h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.comercializacion-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.proceso-comercial {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.paso {
+    width: 190px;
+    padding: 25px 20px;
+    background-color: #f7faf7;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.numero {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 15px;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.paso h3 {
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+.paso p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.comprador {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background-color: #f7faf7;
+    border-radius: 10px;
+}
+
+.comprador h3 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.comprador p {
+    margin-bottom: 25px;
+}
+/* FORMULARIO COMERCIAL */
+
+.formulario-comercial {
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.formulario-comercial h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.formulario-comercial > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.formulario-comercial form {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f7faf7;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.formulario-comercial form h3 {
+    color: #2e7d32;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.formulario-comercial form h3:first-child {
+    margin-top: 0;
+}
+
+.formulario-comercial label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-comercial input,
+.formulario-comercial select,
+.formulario-comercial textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-comercial input:focus,
+.formulario-comercial select:focus,
+.formulario-comercial textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.formulario-comercial textarea {
+    resize: vertical;
+}
+
+.formulario-comercial button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 30px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-comercial button:hover {
+    background-color: #1b5e20;
+}
+/* NUESTRO TRABAJO */
+
+.nuestro-trabajo {
+    padding: 70px 20px;
+    background-color: #f7faf7;
+    text-align: center;
+}
+
+.nuestro-trabajo h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.trabajo-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.trabajo-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.trabajo-paso {
+    width: 280px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.trabajo-numero {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 15px;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.trabajo-paso h3 {
+    color: #2e7d32;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.trabajo-paso p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* LA COOPERATIVA */
+
+.la-cooperativa {
+    padding: 70px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.la-cooperativa h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cooperativa-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.cooperativa-datos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dato-cooperativa {
+    width: 280px;
+    padding: 25px;
+    background-color: #f7faf7;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.dato-cooperativa h3 {
+    color: #2e7d32;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.dato-cooperativa p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.compromiso-cooperativa {
+    max-width: 800px;
+    margin: 45px auto 0;
+    padding: 30px;
+    background-color: #f7faf7;
+    border-left: 5px solid #2e7d32;
+    box-sizing: border-box;
+}
+
+.compromiso-cooperativa h3 {
+    color: #2e7d32;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.compromiso-cooperativa p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+/* GALERÍA */
+
+.galeria {
+    padding: 70px 20px;
+    background-color: #f7faf7;
+    text-align: center;
+}
+
+.galeria h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.galeria-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.galeria-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.foto {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.espacio-foto {
+    height: 190px;
+    background-color: #e8f0e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.foto h3 {
+    color: #2e7d32;
+    font-size: 18px;
+    margin: 18px 10px;
+}
+.foto img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+.nosotros {
+    padding: 70px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.nosotros h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.nosotros p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.nosotros h3 {
+    color: #2e7d32;
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.contacto {
+    padding: 70px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.contacto p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contacto h3 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+#solicitud-comercial {
+    scroll-margin-top: 80px;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+
+    .productos,
+    .comercializacion,
+    .nuestro-trabajo,
+    .la-cooperativa,
+    .galeria {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .producto,
+    .paso,
+    .trabajo-paso,
+    .dato-cooperativa,
+    .foto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .productos h2,
+    .productos-intro,
+    .comercializacion h2,
+    .comercializacion-intro,
+    .nuestro-trabajo h2,
+    .trabajo-intro,
+    .la-cooperativa h2,
+    .cooperativa-intro,
+    .galeria h2,
+    .galeria-intro {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
